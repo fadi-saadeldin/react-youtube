@@ -2,11 +2,11 @@
 ## React Youtube 
 
 ## Usage ##
-**Install dependencies for server**
+**Install dependencies**
 npm install
 
 
-**Run the React App **
+**Install dependencies**
 npm start
 
 **App runs on  on http://localhost:3000**
