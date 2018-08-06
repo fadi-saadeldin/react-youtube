@@ -1,0 +1,28 @@
+{
+  "name": "react-youtube",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "npm": "6.1.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "classnames": "^2.2.6",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "react-spinners": "^0.3.3",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "heroku-postbuild":
+    "NPM_CONFIG_PRODUCTION=false npm install  && npm run build"
+  }
+}
