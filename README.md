@@ -6,7 +6,7 @@
 npm install
 
 
-**Install dependencies**
+**Run React app**
 npm start
 
 **App runs on  on http://localhost:3000**
