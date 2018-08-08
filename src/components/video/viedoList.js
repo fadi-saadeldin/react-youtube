@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import VideoListItem from './videoListItem';
- import { selectVideo } from '../../actions';
-// import styles from './style.less';
+import { selectVideo } from '../../actions';
 
 class VideoList extends Component {
   constructor (props) {
@@ -36,14 +35,8 @@ class VideoList extends Component {
  }
 }
 
-// VideoList.propTypes = {
-//   selectVideo: PropTypes.func.isRequired,
-//   videos: PropTypes.array.isRequired
-// };
-
 const mapStateToProps = ({ videos }) => {
     const { videosList } = videos;
-    console.log(videosList);
     return { videosList };
   
   };

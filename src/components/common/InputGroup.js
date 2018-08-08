@@ -8,7 +8,8 @@ const InputGroup = ({
   value,
   type,
   onChange,
-  defaultValue
+  defaultValue,
+  onKeyPress
 }) => {
   return (
     <div className="input-group ml-5 ">
@@ -19,6 +20,7 @@ const InputGroup = ({
         value={value}
         onChange={onChange}
         defaultValue={defaultValue}
+        onKeyPress={onKeyPress}
       />
     
     </div>

@@ -8,7 +8,7 @@ const InputButton = ({
     iconClass
 }) => {
     return (
-        <div className="input-group ml-2 ">
+        <div className="input-group">
             <button
                 type="button"
                 onClick={onClick}

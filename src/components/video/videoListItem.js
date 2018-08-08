@@ -24,8 +24,7 @@ class VideoListItem extends Component {
     const imageUrl = this.props.video.snippet.thumbnails.default.url;
     const isActive = this.props.selected_video.id.videoId === this.props.video.id.videoId ? 'isActive' : null;
     const liClasses = classNames('video-item', isActive);
-    console.log("this.props.selected_video.id.videoId"+this.props.selected_video.id.videoId);
-    console.log("this.props.video.id.videoId"+this.props.video.id.videoId);
+
     return (
       <li
         className={liClasses}

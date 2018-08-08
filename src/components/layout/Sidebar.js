@@ -7,7 +7,6 @@ import { getPopularVideos } from '../../actions';
 
 class Sidebar extends Component {
   componentWillMount() {
-    console.log('ndndndndn');
     this.props.getPopularVideos();
   }
 

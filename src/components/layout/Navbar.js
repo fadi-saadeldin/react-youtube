@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import searchBar from '../searchBar';
 import SearchBar from '../searchBar';
-// import { clearCurrentProfile } from '../../actions/profileActions';
 
 class Navbar extends Component {
   render() {
@@ -14,9 +13,8 @@ class Navbar extends Component {
           <div className="row">
             <Link className="navbar-brand col-md-3" to="/">
               React Youtube
-          </Link>
+            </Link>
             <SearchBar />
-
           </div>
         </div>
       </nav>

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { searchVideo, searchTextChanged } from '../../actions';
 import { InputButton,InputGroup } from '../common';
@@ -9,6 +8,7 @@ class SearchBar extends Component {
     super();
     this.handleChange = this.handleChange.bind(this);
     this.textChange = this.textChange.bind(this);
+    this.onKeyPress=this.onKeyPress.bind(this);
 
   }
   // handle on change seach text
@@ -19,6 +19,12 @@ class SearchBar extends Component {
   handleChange() {
     this.props.searchVideo(this.props.searchText);
   }
+   // handle on search enter press
+  onKeyPress = (e) => {
+    if(e.key === 'Enter'){
+      this.props.searchVideo(this.props.searchText);
+    }
+}
 
   render() {
     return (
@@ -29,6 +35,7 @@ class SearchBar extends Component {
             name="search"
             onChange={this.textChange}
             value={this.props.searchText}
+            onKeyPress={this.onKeyPress}
           />
           <InputButton
             value=""

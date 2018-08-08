@@ -107,6 +107,11 @@ button{
 .searchbar-inner .form-control-lg{
 min-width: 420px;
 width: 100%;
+border-radius: 0;
+}
+.fa-search{
+  background: #fff;
+  border: 0;
 }
 .embedResponsive_16by9 {
   padding-bottom: 55%;
